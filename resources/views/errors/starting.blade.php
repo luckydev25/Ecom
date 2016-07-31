@@ -96,8 +96,7 @@
                 </div>
             @else
 
-            <h1 class="title">Welcome to Buzzy</h1>
-            <h5 class="thanks">Thanks for Buying and Using Buzzy Script.</h5>
+            <h1 class="title">Сайн байна уу</h1>
             <div class="clear"></div>
 
 
@@ -108,38 +107,14 @@
                     @if(Auth::check() && Auth::user()->usertype=='Admin')
 
 
-                        <h4>Go to Admin Panel Settings and Configure the Site!</h4>
+                        <h4>Админ хэсэгт нэвтэрч үндсэн тохиргоонуудаа засна уу!</h4>
 
-                        <a href="/admin/config"  style="margin-top:50px" class="button button-big button-orange">Admin Panel Settings</a>
+                        <a href="/admin/config"  style="margin-top:50px" class="button button-big button-orange">Админ хэсэг</a>
 
                     @else
                     <i class="fa fa-check green"></i>
-                    <h4>Your Buzzy script successfully installed!</h4>
+                    <h4>Вэб хуудас амжилттай суусан</h4>
 
-                    <p>
-                        <b>Your homepage is not ready yet!</b><br>
-                        Let's add some posts using great editor.
-                        <br>
-                        But before that you may want to check some configuration.
-                        For this please connect to admin panel by login as admin.
-
-                        <div class="loginat">
-                            <b>We create an admin account for you by default</b>
-                        <br>
-                            Email: <u>admin@admin.com </u><br>
-                            Password: <u>admin</u>
-                        <br>
-                        <small>You can find login form at top-right on this page or <a href="/login"  style="margin-top:50px" class="">Click to Login</a></small>
-
-                        <div class="modeadmin_header" style="margin-top:20px">
-                            <div class="modeadmin_text">
-                                <h6>Warning: You must change admin password on user settings when you are login.</h6>
-                            </div>
-                        </div>
-
-                        </div>
-
-                    </p>
                     @endif
 
 
@@ -148,11 +123,8 @@
             <div class="clear"></div>
             <div class="copyright">
 
-                <strong>Copyright &copy; 2015 <a href="http://akbilisim.com" target="_blank"><b>akbilisim</b></a>.</strong> All rights reserved.
 
-                &nbsp;&nbsp;&nbsp;
-
-                <b><a href="http://buzzy.akbilisim.com" target="_blank">Buzzy</a></b> Version : {{ Config::get('installer.last_version') }}
+                <b><a href="#" target="_blank"></a></b> Хувилбар : {{ Config::get('installer.last_version') }}
             </div>
 @endif
 
